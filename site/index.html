@@ -1,8 +1,19 @@
 <html>
   <head><title>Deploying AWS Lambda Go functions with Netlify</title></head>
   <body>
-    <h1>Deploying AWS Lambda Go functions with Netlify</h1>
-    <p>This is an example of how to deploy Go functions with Netlify on AWS Lambda.</p>
-    <p>Go to <a href="/.netlify/functions/hello-lambda">/.netlify/functions/hello-lambda</a> to see the function in action</p>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+      <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+      <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+      <button type="submit">Send</button>
+      </p>
+    </form>
   </body>
 </html>
