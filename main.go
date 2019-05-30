@@ -25,11 +25,9 @@ type Body struct {
 }
 
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	fmt.Printf("In the handler")
 	// Get information from the data payload.
 	var body Body
 	json.Unmarshal([]byte(request.Body), &body)
-	fmt.Printf("Got the form from %s", body.Payload.Form.Name)
 
 	// Get emails
 	port, _ := strconv.Atoi(os.Getenv("MAIL_PORT"))
